@@ -8,11 +8,11 @@ import { ContentProvider } from "@/contexts/ContentContext";
 import fetchHygraphContent from "@/lib/hygraph/fetchHygraphContent";
 
 // Components
-import LandingPage from "@/components/pages/landing-page/LandingPage";
+import AboutPage from "@/components/pages/about-page/AboutPage";
 
 export const metadata: Metadata = {
-  title: "Dakota Ruller Resume",
-  description: "We both know I already got the job",
+  title: "About Me",
+  description: "Stay a while lets get to know eachother",
 };
 
 export default async function Home() {
@@ -22,7 +22,7 @@ export default async function Home() {
     <ContentProvider content={pageContent}>
       <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
         <div className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-          <LandingPage />
+          <AboutPage />
         </div>
       </div>
     </ContentProvider>
