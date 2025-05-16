@@ -51,6 +51,7 @@ export const homePageQuery = `
           attendanceLength
           location
           keyPoints
+          isWorkExperience
         }
       }
       sharedContent {

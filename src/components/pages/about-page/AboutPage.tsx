@@ -12,8 +12,8 @@ const AboutPage: React.FC = () => {
     return (
         <div className="flex">
             {
-                content.content.error ? 
-                (<GenericError message={content.content.errorMessage}/>) :
+                content.error ? 
+                (<GenericError message={content.errorMessage}/>) :
                 (<div>About Page</div>)
             }
         </div>

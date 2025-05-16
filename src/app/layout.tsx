@@ -53,7 +53,9 @@ export default async function RootLayout({
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            <div className="flex flex-col gap-8 row-start-2 items-center w-screen h-screen p-3">
+              {children}
+            </div>
             <ThemeToggleButton/>
           </ThemeProvider>
         </main>

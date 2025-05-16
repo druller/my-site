@@ -11,7 +11,7 @@ type ContentProviderProps = {
 };
 // TODO: update type from any
 type ContentConsumerPropsTypes = {
-    content: ContentType | any,
+    [key: string]: ContentType | any,
     setContent: (content: ContentType) => void
 };
 
@@ -66,7 +66,15 @@ function useContentContext(): ContentConsumerPropsTypes {
   if (context === undefined) {
     context = { ...initialContentState };
   }
-  return context;
+  
+  return context.content.error ? {
+    error: context.content.error,
+    errorMessage: context.content.errorMessage
+  } : 
+  {
+    ...context.content[Object.keys(context.content)[0]],
+    error: false
+  };
 }
 
 export { ContentProvider, useContentContext };

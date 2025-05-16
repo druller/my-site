@@ -1,5 +1,5 @@
 // Node Modules
-import { IconName } from "@fortawesome/fontawesome-svg-core";
+import { IconName } from "lucide-react/dynamic";
    
 type Navbar = {
   mobileHeading: string,
@@ -35,6 +35,7 @@ export type ExperienceOrEducation = {
   attendanceLength: string,
   location: string,
   keyPoints: Array<string>,
+  isWorkExperience: boolean
 }
 
 export type PersonalAndContactDetails = {
@@ -45,6 +46,7 @@ export type PersonalAndContactDetails = {
   phoneNumber: string,
   location: string,
   socialLinks: Array<SocialLink>,
+  isWorkExperience: boolean
 }
 
 export type TechnologySkill = {
