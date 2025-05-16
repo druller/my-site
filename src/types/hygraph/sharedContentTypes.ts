@@ -2,6 +2,7 @@
 import { IconName } from "lucide-react/dynamic";
    
 type Navbar = {
+  test: string,
   mobileHeading: string,
   navItems: Array<ButtonOrLink>
 }
