@@ -10,6 +10,9 @@ import fetchHygraphContent from "@/lib/hygraph/fetchHygraphContent";
 // Components
 import LandingPage from "@/components/pages/landing-page/LandingPage";
 
+// Styles
+import "../styles/sub-pages/homepage.css";
+
 export const metadata: Metadata = {
   title: "Dakota Ruller Resume",
   description: "We both know I already got the job",

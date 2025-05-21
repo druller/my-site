@@ -5,7 +5,7 @@ import { Geist, Oswald } from "next/font/google";
 import { ThemeProvider } from "@/contexts/ThemeProvider"
 
 // Styles
-import "./globals.css";
+import "../styles/globals.css";
 
 // Components
 import ThemeToggleButton from "@/components/ui/theme-toggle-button";
