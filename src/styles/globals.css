@@ -7,33 +7,43 @@ body {
   font-weight: 300;
 }
 
-.font-oswald {
+/* 
+  ALL CLASSES IN CSS FILES SHOULD BE 
+  PREFIXED WITH "bc-" 
+  TO SIGNINFY THAT ITS A CUSTOM 
+  CLASS AND NOT A TAILWIND CLASS 
+*/
+/* 
+  bc- STANDS FOR base class 
+*/
+
+.bc-font-oswald {
   font-family: var(--font-oswald);
 }
 
-.font-geist {
+.bc-font-geist {
   font-family: var(--font-geist);
 }
 
-.transition-all-timing {
+.bc-transition-all-timing {
   transition: all var(--global-transition-time);
 }
 
-.transition-extended-all-timing {
+.bc-transition-extended-all-timing {
   transition: all var(--global-transition-time-extended);
 }
 
-.icon-hover {
+.bc-icon-hover {
   opacity: 0.7;
   transition: all var(--global-transition-time);
 }
 
-.icon-hover:hover {
+.bc-icon-hover:hover {
   opacity: 1;
   transform: scale(1.1);
 }
 
-.theme-toggle-btn {
+.bc-theme-toggle-btn {
   position: fixed;
   top: 2px;
   left: 2px;
@@ -69,6 +79,12 @@ body {
     --chart-5: 27 87% 67%;
     --global-transition-time: 400ms;
     --global-transition-time-extended: 600ms;
+    --xs-breakpoint: 400px;
+    --sm-breakpoint: 640px;
+    --md-breakpoint: 768px;
+    --lg-breakpoint: 1024px;
+    --xl-breakpoint: 1280px;
+    --xxl-breakpoint: 1536px;
   }
 
   .dark {
@@ -96,7 +112,6 @@ body {
     --chart-3: 30 80% 55%;
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
-    --global-transition-time: 400ms;
   }
 }
 

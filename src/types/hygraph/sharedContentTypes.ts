@@ -36,7 +36,8 @@ export type ExperienceOrEducation = {
   attendanceLength: string,
   location: string,
   keyPoints: Array<string>,
-  isWorkExperience: boolean
+  isWorkExperience: boolean,
+  experienceTechnologies: Array<string>
 }
 
 export type PersonalAndContactDetails = {

@@ -1,20 +1,50 @@
-.work-experience-item {
+.bc-work-experience-item {
     border-radius: 5px;
+    padding: 10px 20px;
 
-    .work-experience-item-header {
+    .bc-work-experience-item-header {
         border-bottom: 1px solid white;
+        width: 100%;
     }
 
-    .align-text-end {
+    .bc-align-text-end {
         text-align: end;
+    }
+
+    .bc-work-experience-technologies {
+        height: auto;
+        opacity: 1;
+
+        .bc-technology-pill {
+            background-color: hsl(var(--secondary));
+        }
     }
 }
 
-.work-experience-item:hover {
+.bc-work-experience-item:hover {
     background-color: hsl(var(--muted));
     padding: 10px 20px;
 
-    .work-experience-item-header {
+    .bc-work-experience-item-header {
         width: 100%;
+    }
+
+    .bc-work-experience-technologies {
+        height: auto;
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 640px) {
+    .bc-work-experience-item {
+        padding: 0;
+
+        .bc-work-experience-item-header {
+            width: fit-content;
+        }
+
+        .bc-work-experience-technologies {
+            opacity: 0;
+        }
     }
 }

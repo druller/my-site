@@ -18,7 +18,7 @@ const StaticLeftSection: React.FC = () => {
                     <p className="text-zinc-400 mr-0 mb-2 xs:mr-4 lg:mb-0">Software Engineer</p>
                     <div className="flex items-center">
                         <DynamicIcon name="map-pin" size={15} className="mr-1"/>
-                        <p className="font-geist">{content.sharedContent.personalInfo.location}</p>
+                        <p className="bc-font-geist">{content.sharedContent.personalInfo.location}</p>
                     </div>
                 </div>
             </div>

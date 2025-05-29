@@ -10,7 +10,7 @@ export default function ThemeToggleButton() {
   return (
     <div
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-      className="theme-toggle-btn"
+      className="bc-theme-toggle-btn"
     >
       {
         theme === 'light' ? 

@@ -12,12 +12,11 @@ import { Key } from "react";
 
 const LandingPageSocials: React.FC = () => {
     const content = useContentContext();
-    content.sharedContent.personalInfo.socialLinks.map((socialLink: SocialLink) => (console.log(socialLink)))
-    
+
     return (
         <div className="flex">
             {content.sharedContent.personalInfo.socialLinks.map((socialLink: SocialLink, key: Key) => (
-                <a key={key} href={socialLink.socialLinkUrl} target="_blank" className="icon-hover">
+                <a key={key} href={socialLink.socialLinkUrl} target="_blank" className="bc-icon-hover mr-4">
                     <DynamicIcon name={socialLink.socialIconName} size={30}/>
                 </a>
             ))}

@@ -52,6 +52,7 @@ export const homePageQuery = `
           location
           keyPoints
           isWorkExperience
+          experienceTechnologies
         }
       }
       sharedContent {
