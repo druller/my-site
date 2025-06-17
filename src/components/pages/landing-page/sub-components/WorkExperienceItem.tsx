@@ -10,10 +10,14 @@ type Props = {
 // Components
 import { DynamicIcon } from "lucide-react/dynamic";
 
+// Hooks
+import useHoverBodyEffect from '@/hooks/useHoverBodyEffect';
+
 const ScollableRightSection: React.FC<Props> = ({ workExperience, isOddIndex }) => {
+    useHoverBodyEffect();
     
     return (
-        <div className={`flex flex-col ${isOddIndex ? "items-end" : ""} mb-10 bc-work-experience-item bc-transition-extended-all-timing`}>
+        <div className={`flex flex-col ${isOddIndex ? "items-end" : ""} mb-10 bc-work-experience-item bc-transition-extended-all-timing bc-hover-cursor-styles`}>
             <h3 className={`text-2xl mb-2 w-[fit-content] bc-work-experience-item-header bc-transition-extended-all-timing ${isOddIndex ? "bc-align-text-end" : ""}`}>{workExperience.name}</h3>
             <div className="flex items-center">
                 <DynamicIcon name="map-pin" size={15} className="mr-2"/>
