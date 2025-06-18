@@ -52,7 +52,6 @@ body {
 }
 
 /* Custom Cursor */
-/* ADD A CALSS TO MAKE SIZE OF CURSOR LARGER ON HOVER OVER CERTAINT ELEMENTS */
 .custom-cursor {
   position: fixed;
   width: 20px;
@@ -62,15 +61,21 @@ body {
   pointer-events: none;
   z-index: 9999;
   transform: translate(-50%, -50%);
-  transition: height 0.1s ease, width 0.1s ease;
+  transition: height var(--global-transition-time) ease, width var(--global-transition-time) ease;
   mix-blend-mode: difference;
 }
 
-/* CREATE  */
 .custom-cursor.cursor-large {
-  width: 60px;
   height: 60px;
+  width: 60px;
+  transition: height var(--global-transition-time) ease, width var(--global-transition-time) ease;
 }
+
+/*
+  Adding this here as a reference since its used as the class to trigger the @/hooks/useHoverBodyEffect custom hook.
+  If any updates are made to the class name in the hook this should also be updated.
+*/
+.bc-hover-cursor-styles {}
 
 @layer base {
   :root {
@@ -146,9 +151,3 @@ body {
     @apply bg-background text-foreground;
   }
 }
-
-/*
-  Adding this here as a reference since its used as the class to trigger the @/hooks/useHoverBodyEffect custom hook.
-  If any updates are made to the class name in the hook this should also be updated.
-*/
-.bc-hover-cursor-styles {}
