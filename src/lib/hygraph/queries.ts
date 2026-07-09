@@ -36,7 +36,7 @@ export const contactPageQuery = `
    
 export const homePageQuery = `
  query Homepage {
-  homePage(where: {id: "cl87t4ifa8pzl0bn4lwieugao"}) {
+  homePage(where: {id: "${pageIds.homePage}"}) {
       summary
       skills {
         ... on TechnologySkill {
@@ -73,10 +73,11 @@ export const homePageQuery = `
     }
   }
 `;
-   
+
+// TODO: add workPageQuery when the model is created in hygraph
 export const workPageQuery = `
   
-   `;
+`;
 
 /* eslint-disable import/no-anonymous-default-export */
 export default {
