@@ -35,7 +35,7 @@ const initialContentState: any = {
     contactPage: {},
     error: false
   },
-  setContent: () => {}
+  setContent: (): void => {}
 };
 
 const ContentContext = createContext<ContentConsumerPropsTypes>(initialContentState);
@@ -69,7 +69,8 @@ function useContentContext(): ContentConsumerPropsTypes {
   
   return context.content.error ? {
     error: context.content.error,
-    errorMessage: context.content.errorMessage
+    errorMessage: context.content.errorMessage,
+    setContent: (): void => {}
   } : 
   {
     ...context.content[Object.keys(context.content)[0]],
